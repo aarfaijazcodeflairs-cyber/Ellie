@@ -1,0 +1,57 @@
+<div class="image-wrapper">
+    <div class="image-selector"> 
+        <img src="{{section.settings.nail_art_image_1 | img_url:'master' }}" alt="Image of Nail art">  
+         <img src="{{section.settings.nail_art_image_2 | img_url:'master' }}" alt="Image of Nail art">  
+          <img src="{{section.settings.nail_art_image_3 | img_url:'master' }}" alt="Image of Nail art">  
+           <img src="{{section.settings.nail_art_image_4 | img_url:'master' }}" alt="Image of Nail art">  
+            <img src="{{section.settings.nail_art_image_5 | img_url:'master' }}" alt="Image of Nail art"> 
+              <img src="{{section.settings.nail_art_image_6 | img_url:'master' }}" alt="Image of Nail art">   
+    </div>
+   </div>
+{% schema %}
+{ "name": "Nail Art",
+    "class": "nailart",
+    "settings": [
+    { "type": "image_picker",
+        "id": "nail_art_image_1",
+        "label": "Select Image"
+    },
+     { "type": "image_picker",
+        "id": "nail_art_image_2",
+        "label": "Select Image"
+    },
+
+     { "type": "image_picker",
+        "id": "nail_art_image_3",
+        "label": "Select Image"
+    },
+
+     { "type": "image_picker",
+        "id": "nail_art_image_4",
+        "label": "Select Image"
+    },
+
+     { "type": "image_picker",
+        "id": "nail_art_image_5",
+        "label": "Select Image"
+    },
+      { "type": "image_picker",
+        "id": "nail_art_image_6",
+        "label": "Select Image"
+    }
+    ],
+    "presets": [
+        {"name": "Nail Art",
+            "category": "custom",
+            "settings": {
+                "nail_art_image_1":"",
+                 "nail_art_image_2":"",
+                  "nail_art_image_3":"",
+                   "nail_art_image_4":"",
+                    "nail_art_image_5":"",
+                    "nail_art_image_6":""
+            }
+        }
+    ]
+}
+{% endschema %}

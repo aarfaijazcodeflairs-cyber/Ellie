@@ -1,0 +1,44 @@
+<div class="main-bottom-text">
+    <div class="main-text-section">
+   <h2>{{ section.settings.heading_1 }}</h2>
+    <h2>{{ section.settings.heading_2 }}</h2>
+     <h2>{{ section.settings.heading_3 }}</h2>
+
+    </div>
+
+
+</div>
+
+{% schema %}
+{  "name": "Ellie Bottom Text",
+    "class": "elliebottomtext",
+    "settings": [
+       { "type": "richtext",
+        "id": "heading_1",
+        "label": "Heading"
+    },
+       { "type": "richtext",
+        "id": "heading_2",
+        "label": "Heading"
+    },
+       { "type": "richtext",
+        "id": "heading_3",
+        "label": "Heading"
+    }
+
+    ],
+    "presets": [
+        { "name": "Ellie Bottom Text",
+            "category": "custom",
+            "settings": {
+            "heading_1":"",
+             "heading_2":"",
+              "heading_3":""
+            }
+        
+        
+        }
+    ]
+
+}
+{% endschema %}

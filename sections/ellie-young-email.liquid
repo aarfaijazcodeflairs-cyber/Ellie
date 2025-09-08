@@ -1,0 +1,65 @@
+<div  class="email-main-wrapper">
+   <div class="email-main-section">
+    <div class="email-info">
+        <div class="email-image">
+    <div class="emial-img">  <img  src="{{ section.settings.mail_image|  img_url: 'master' }}"  alt="This is mail image"></div>
+    </div>
+    <div class="email-info-heaidngs">
+    <div class="email-heading"> <h2> {{ section.settings.signup_info-heading }}</h2></div>
+    <div  class="email-para"><p> {{ section.settings.signup_info-para}}</p></div>
+    </div>
+   </div>
+   
+   <div class="email-text">
+<form  action="#"  target="_blank" >
+    <div class="email-address">
+  <input type="text" id="email" placeholder="Enter your email address" >
+  </div>
+    <div class="email-button">
+  <input type="submit" value="Sign Up">
+  </div>
+</form> 
+   </div>
+   </div>
+</div>
+
+
+{% schema %}
+  {"name": "Email section",
+    "class": "emailsection",
+
+    "settings": [
+
+          {  "type": "image_picker",
+                "id": "mail_image",
+                "label": "Write text"            
+            },
+
+            {  "type": "richtext",
+                "id": "signup_info-heading",
+                "label": "Write text"            
+            },
+            {  "type": "richtext",
+                "id": "signup_info-para",
+                "label": "Write text"            
+            },   
+
+    ],
+
+    "presets": [
+                {"name": "Email section",
+                    "category": "custom",
+                    "settings": {
+
+                        "mail_image":"",
+                        "signup_info-heading":"",
+                        "signup_info-para":""                   
+                    }              
+                }
+
+
+    ]
+}
+
+
+ {% endschema %}
